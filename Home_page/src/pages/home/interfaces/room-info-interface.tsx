@@ -1,5 +1,9 @@
-import { EntranceProps } from './entrance-props-interface';
+export interface roomInfo {
+  roomId: string;
+  roomTitle: string;
+  roomHostname: string;
+}
 
 export interface ResponseRoomInfo {
-  data: EntranceProps[];
+  data: roomInfo[];
 }

@@ -1,12 +1,7 @@
-export interface EntranceProps {
-  roomId: string;
-  roomTitle: string;
-  roomHostname: string;
-  setRooms: React.Dispatch<React.SetStateAction<EntranceProps[]>>;
-}
+import { roomInfo } from './room-info-interface';
 
-export interface ResponseEntranceProps {
-  data: EntranceProps[];
+export interface EntranceProps extends roomInfo {
+  onClick: (e: React.MouseEvent<HTMLDivElement, MouseEvent>, roomId: string) => void;
 }
 
 export interface Values {
