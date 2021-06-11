@@ -20,13 +20,16 @@ export function FeedbackComponent() {
     'Content-Type': 'application/json',
     Authorization: token,
   };
+
   useEffect(() => {
     setToken(localStorage.getItem('token'));
     setUserId(localStorage.getItem('userId'));
   }, [userState]);
+
   useEffect(() => {
     setTextLength(feedbackForm.text.length);
   }, [feedbackForm]);
+
   const onChange = (e: React.ChangeEvent<HTMLTextAreaElement>) => {
     if (feedbackForm.text.length <= 1000) {
       setFeedbackForm({ userId: userId, text: e.target.value });
@@ -36,6 +39,7 @@ export function FeedbackComponent() {
         text: '허용 글자수 : 1000자',
       });
   };
+
   const onClick = (e: React.MouseEvent<HTMLButtonElement, MouseEvent>) => {
     e.preventDefault();
     if (token === null || userId === null) {
@@ -60,6 +64,7 @@ export function FeedbackComponent() {
         }),
       );
   };
+
   return (
     <div>
       <div className='w-full flex justify-center items-center  h-mainBox'>

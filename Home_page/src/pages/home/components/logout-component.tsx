@@ -17,6 +17,7 @@ export function LogoutComponent() {
     });
     history.push('');
   };
+
   return (
     <button
       className='py-1 px-2 font-semibold  rounded-lg shadow-md text-white bg-gradient-to-tr from-blue-300 to-blue-400 hover:bg-blue-500'

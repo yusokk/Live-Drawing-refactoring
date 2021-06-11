@@ -6,11 +6,13 @@ import './room-list.css';
 import { EntranceProps } from '../interfaces/entrance-props-interface';
 export function RoomListComponent() {
   const [rooms, setRooms] = useState<EntranceProps[]>([]);
+
   useEffect(() => {
     axios.get(`${process.env.REACT_APP_API_URL}`).then((res: ResponseRoomInfo) => {
       setRooms(res.data);
     });
   }, []);
+
   return (
     <>
       <div className='roomList grid grid-cols-4 gap-5 pt-10 flex-justify-center w-full'>

@@ -83,17 +83,10 @@ export function EntranceComponent(props: EntranceProps) {
   };
 
   return (
-    // <button className='focus:ring-2 focus:ring-red-500'>
     <div onClick={onClick} className={' flex flex-col items-center w-full mb-20 cursor-pointer'}>
       <div className='square rounded-3xl h-full w-full bg-bird-pattern bg-cover hover:bg-red-700 hover:opacity-50'></div>
       <div className={'roomTitle pt-4 text-blue-400 font-semibold w-full truncate'}>{props.roomTitle}</div>
       <div className='text-gray-400 w-full font-normal truncate'>{`${props.roomHostname}`}</div>
-      {/* <div className={'roomInfo mt-1'}> */}
-      {/* <div className={'buttonandImage'}> */}
-      {/* <img src='/profile.jpeg' alt=''></img> */}
-      {/* </div> */}
-      {/* </div> */}
     </div>
-    // </button>
   );
 }
