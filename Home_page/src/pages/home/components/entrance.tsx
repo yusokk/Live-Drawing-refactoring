@@ -2,7 +2,7 @@ import React from 'react';
 import './room-list.css';
 import { EntranceProps } from '../interfaces/entrance-props-interface';
 
-export function EntranceComponent(props: EntranceProps) {
+function Entrance(props: EntranceProps) {
   return (
     <div
       onClick={(e) => props.onClick(e, props.roomId)}
@@ -14,3 +14,5 @@ export function EntranceComponent(props: EntranceProps) {
     </div>
   );
 }
+
+export const MemoizedEntrance = React.memo(Entrance);
