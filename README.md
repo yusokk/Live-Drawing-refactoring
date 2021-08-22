@@ -3,7 +3,8 @@
 ~~서비스 주소: https://hwabang.site/~~ (서비스 종료)
 <br/>
 발표 영상으로 대체 -> https://www.youtube.com/watch?v=hgGTLrdzkWw
-
+{% include 파일명.html id="hgGTLrdzkWw" %}  
+<iframe width="560" height="315" src="https://www.youtube.com/watch?v=hgGTLrdzkWw" frameborder="0" allowfullscreen></iframe>
 <br/>
 
 ## Table of Contents
