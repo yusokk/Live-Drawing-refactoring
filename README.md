@@ -1,6 +1,7 @@
 # 방구석 화방 - 라이브 드로잉 강의 공간
 
-서비스 주소: https://hwabang.site/
+~~서비스 주소: https://hwabang.site/~~ (서비스 종료)
+발표 영상으로 대체 -> https://www.youtube.com/watch?v=hgGTLrdzkWw
 
 <br/>
 
